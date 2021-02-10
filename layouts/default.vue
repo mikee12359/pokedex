@@ -1,9 +1,27 @@
 <template>
   <div>
-    <Nuxt />
+    <header class="py-5 px-4">
+      <h1 class="">Pokedex</h1>
+      <div class="bg-gray-200 rounded-xl flex px-3 py-1">
+        <em class="">Search</em>
+        <input type="text" class="bg-transparent w-full outline-none px-2">
+      </div>
+    </header>
+    <main>
+      <Nuxt />
+    </main>
+    <footer class="py-20 text-center">
+      <p>Michael Angelo P. Autor © 2021</p>
+    </footer>
   </div>
 </template>
-
+<script lang="ts">
+import { Vue, Component } from 'nuxt-property-decorator';
+@Component
+export default class DefaultLayout extends Vue {
+  
+}
+</script>
 <style>
 html {
   font-family:

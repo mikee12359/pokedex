@@ -3,7 +3,7 @@
     <div>
       <Logo />
       <h1 class="title">
-        my-pokedex
+        pokedex
       </h1>
       <div class="links">
         <a
@@ -26,11 +26,12 @@
     </div>
   </div>
 </template>
-
 <script lang="ts">
-import Vue from 'vue'
-
-export default Vue.extend({})
+import { Vue, Component } from 'nuxt-property-decorator';
+@Component
+export default class IndexPage extends Vue {
+  
+}
 </script>
 
 <style>
