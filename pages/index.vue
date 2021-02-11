@@ -30,7 +30,12 @@
 import { Vue, Component } from 'nuxt-property-decorator';
 @Component
 export default class IndexPage extends Vue {
-  
+  mounted() {
+    this.$accessor.pokedex.getPokemons()
+      .then(() => {
+        console.log(this.$accessor.pokedex.pokemons)
+      })
+  }
 }
 </script>
 

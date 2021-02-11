@@ -36,6 +36,7 @@ const config: NuxtConfig  = {
     // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
     '@nuxtjs/tailwindcss',
+    'nuxt-typed-vuex',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
